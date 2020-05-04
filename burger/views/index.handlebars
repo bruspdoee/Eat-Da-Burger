@@ -6,6 +6,7 @@
   {{#each burgers}}
     {{#unless devoured}}
       {{!-- {{> burgers devoured=true}} --}}
+      <li>{{this.burger_name}}</li>
     {{/unless}}
   {{/each}}
 </ul>
@@ -16,11 +17,12 @@
   {{#each burgers}}
     {{#if devoured}}
       {{!-- {{> burgers devoured=false}} --}}
+      <li>{{this.burger_name}}</li>
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>What Burger are you eating NEXT!</h2>
+<h2>What Burger are you eating NEXT?</h2>
 <form class="create-form">
 
   <div class="form-group">
